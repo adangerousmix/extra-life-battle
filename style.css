@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Bungee&display=swap');
+
+body {
+    color: white;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: black;
+}
+
+.widget {
+    align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 400px;
+    justify-content: center;
+    position: relative;
+    width: 1000px;
+    z-index: 1;
+}
+
+.widget img {
+    order: 2;
+    width: 1000px;
+    z-index: 5;
+}
+
+.red-total {
+    left: 200px;
+    order: 3;
+}
+
+.blue-total {
+    left: 624px;
+    order: 4;
+}
+
+.score {
+    color: white;
+    font-size: 3rem;
+    position: absolute;
+    text-align: center;
+    top: 140px;
+    width: 160px;
+    z-index: 10;
+}
+
+.message {
+    border: 8px solid white;
+    color: white;
+    left: 180px;
+    line-height: 1.5rem;
+    margin-top: -10px;
+    order: 1;
+    overflow: hidden;
+    padding: 10px;
+    position: absolute;
+    text-align: center;
+    transform: perspective(250px) rotateX(-10deg);
+    width: 600px;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.screen-top {
+    padding-top: 20px;
+    top: 246px;
+    transform: perspective(250px) rotateX(10deg);
+}
+
+.screen-bottom {
+    bottom: 240px;
+    padding-bottom: 30px;
+    transform: perspective(250px) rotateX(-10deg);
+}
+
+.message-show {
+    animation: message-show 500ms ease-in forwards;
+}
+
+.message-hide {
+    animation: message-hide 200ms ease-in forwards;
+}
+
+@keyframes message-show {
+    0% { height: 0px; padding: 0; visibility: hidden; }
+    100% { height: 100px; visibility: visible; }
+}
+
+@keyframes message-hide {
+    0% { height: 100px; visibility: visible; }
+    100% { height: 0px; padding: 0; visibility: hidden; }
+}
+
+.message-user {
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    font-size: 1.4rem;
+    font-family: "Bree Serif", serif;
+    max-width: 590px;
+    overflow: hidden;
+    padding: 2px;
+    text-transform: uppercase;
+}
+
+.message-text {
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    font-size: 1rem;
+    font-family: "Bree Serif", serif;
+    max-width: 590px;
+    overflow: hidden;
+    padding: 2px;
+}
+
+.message-donation {
+    font-size: 1.8rem;
+    display: inline-block;
+}
+
+.message-red {
+    background-color: #A20000;
+}
+
+.message-blue {
+    background-color: #01265D;
+}
