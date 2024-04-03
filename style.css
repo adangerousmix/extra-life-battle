@@ -31,7 +31,7 @@ body {
 }
 
 .blue-total {
-    left: 624px;
+    left: 640px;
     order: 4;
 }
 
@@ -100,7 +100,7 @@ body {
     font-family: "Bree Serif", serif;
     max-width: 590px;
     overflow: hidden;
-    padding: 2px;
+    padding: 1px;
     text-transform: uppercase;
 }
 
@@ -116,8 +116,9 @@ body {
 }
 
 .message-donation {
-    font-size: 1.8rem;
     display: inline-block;
+    font-size: 1.8rem;
+    padding-top: 3px;
 }
 
 .message-red {
